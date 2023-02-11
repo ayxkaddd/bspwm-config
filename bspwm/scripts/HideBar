@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+#	Simple script to hide/unhide polybar
+#   Author: z0mbi3
+#	url: https://github.com/gh0stzk
+
+
+function hide() {
+	
+		
+	if [[ "${RICETHEME}" == @(isabel) ]]; then
+		polybar-msg cmd hide | bspc config top_padding 1
+	else 
+		echo "Error: Something fails dud.."
+	fi
+}
+
+function unhide() {
+	if [[ "${RICETHEME}" == isabel ]]; then
+		polybar-msg cmd show | bspc config bottom_padding 1
+	else 
+		echo "Error: Something fails dud.."		
+	fi
+}
+
+   case $1 in
+		-h | --hide | hide)
+			hide
+			exit;;
+		-u | --unhide | unhide)
+			unhide
+			exit;;
+			*) # Invalid option
+         echo "Error: Invalid option"
+         exit;;
+   esac

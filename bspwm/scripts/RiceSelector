@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Author 	 -  z0mbi3
+# Source 	 -  https://github.com/gh0stzk/dotfiles
+# Maintainer -  z0mbi3.zk@protonmail.com
+
+cfg_file="$HOME/.config/bspwm/rice.cfg"
+rofi_command="rofi -theme $HOME/.config/bspwm/scripts/RiceSelector.rasi"
+
+# Options
+isabel="󰔿 ayx"
+
+options="$isabel\n"
+chosen="$(printf "$options" | $rofi_command -dmenu)"
+	case $chosen in
+
+			$isabel)
+				cat <<< "isabel" > ${cfg_file}
+				bspc wm -r
+				;;
+		esac
+	
