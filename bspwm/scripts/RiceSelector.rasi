@@ -1,6 +1,7 @@
-// # Modification by 	-  z0mbi3
+// # Modification by 		-  z0mbi3
 // # Source 			-  https://github.com/gh0stzk/dotfiles
 // # Maintainer 		-  z0mbi3.zk@protonmail.com
+
 
 /** Original Work
  * Author : Aditya Shakya (adi1090x)
@@ -30,8 +31,8 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       500px;
-    height:                      378px;
+    width:                       250px;
+    height:                      280px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -52,8 +53,8 @@ mainbox {
 }
 
 listbox {
-    spacing:                     7px;
-    padding:                     35px;
+    spacing:                     10px;
+    padding:                     60px 30px 40px;
     background-color:            transparent;
     orientation:                 vertical;
     children:                    [ "message", "listview" ];
@@ -65,13 +66,13 @@ inputbar {
     spacing:                     10px;
     padding:                     40px 40px 45px;
     background-color:            transparent;
-    background-image:            url("~/.config/bspwm/assets/rs.webp", width);
+    background-image:            url("~/.config/bspwm/assets/si-rofi.webp", width);
     text-color:                  @foreground;
     orientation:                 horizontal;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
 textbox-prompt-colon {
-    enabled:                     true;
+    enabled:                     false;
     expand:                      false;
     str:                         "";
     padding:                     12px 15px;
@@ -100,9 +101,9 @@ dummy {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     3;
-    lines:                       4;
-    cycle:                       false;
+    columns:                     1;
+    lines:                       20;
+    cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
     layout:                      vertical;
