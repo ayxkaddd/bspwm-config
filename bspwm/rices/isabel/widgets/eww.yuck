@@ -1,4 +1,3 @@
-
 (defpoll time0 :interval "10s"  "date '+%H':%M")
 (defpoll date :interval "10s"  "date '+%b %d'")
 
@@ -30,7 +29,7 @@
                :halign "center"
                :valign "center"
                :space-evenly "false"
-               (button :onclick "eww close powermenu -c ~/.config/bspwm/rices/isabel/widgets & betterlockscreen -l"
+               (button :onclick "eww close powermenu -c ~/.config/bspwm/rices/isabel/widgets & betterlockscreen -l dimblur"
                     :class "lock-btn"
                     :tooltip "Lock screen"
                     ""))
