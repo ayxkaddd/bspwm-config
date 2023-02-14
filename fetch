@@ -1,0 +1,2 @@
+cp -rf ~/.config/bspwm/* ~/bspwm.git/bspwm/
+echo "files has been fetched!"
