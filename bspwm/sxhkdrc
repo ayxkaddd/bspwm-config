@@ -58,6 +58,9 @@ super + @space
 alt + @space
 	RiceSelector
 
+alt + Tab
+    rofi -no-lazy-grab -show window -theme $HOME/.config/bspwm/rices/$RICETHEME/window_launcher.rasi
+
 # Reload sxhkd
 super + Escape
 	pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'Config has been reloaded'
