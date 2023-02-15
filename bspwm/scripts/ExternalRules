@@ -68,7 +68,7 @@ case "$class" in
 	    ;;
 	firefox|Navigator)
 	    eval "$consequences"
-	    [ "$state" ] || echo "state=pseudo_tiled desktop=^1 border=off rectangle=1480x820+0+0 center=on follow=on"
+	    [ "$state" ] || echo "state=tiled desktop=^1 border=on rectangle=1480x820+0+0 center=on follow=on"
 	    ;;
 	Transmission-gtk)
 	    eval "$consequences"
@@ -85,7 +85,7 @@ case "$class" in
 		[[ ${#wm_class[@]} == "2" ]] && instance=${wm_class[0]}
 		[[ -n "$class" ]] && main
 		;;
-    code-oss)  
+    vscode-oss|code-oss)  
         eval "$consequences"
         [ "$state" ] || echo "state=pseudo_tiled desktop=^4 follow=on center=on"
         ;; 
