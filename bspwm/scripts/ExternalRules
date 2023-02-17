@@ -66,7 +66,7 @@ case "$class" in
 	    eval "$consequences"
 	    [ "$state" ] || echo "state=pseudo_tiled desktop=^2 rectangle=966x576+0+0 follow=on center=on border=off"
 	    ;;
-	firefox|Navigator)
+	firefox|librewolf)
 	    eval "$consequences"
 	    [ "$state" ] || echo "state=tiled desktop=^1 border=on rectangle=1480x820+0+0 center=on follow=on"
 	    ;;
@@ -85,7 +85,7 @@ case "$class" in
 		[[ ${#wm_class[@]} == "2" ]] && instance=${wm_class[0]}
 		[[ -n "$class" ]] && main
 		;;
-    vscode-oss|code-oss)  
+    vscode|code-oss)  
         eval "$consequences"
         [ "$state" ] || echo "state=pseudo_tiled desktop=^4 follow=on center=on"
         ;; 

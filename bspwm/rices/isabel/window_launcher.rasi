@@ -13,7 +13,7 @@ configuration {
 	application-fallback-icon: 	"Adwaita";
     show-icons:                 true;
 	drun-display-format:        "{name}";
-	disable-history:            true;
+	disable-history:            false;
 	sidebar-mode: 				false;
 }
 
@@ -34,7 +34,7 @@ window {
     anchor:                      center;
     fullscreen:                  false;
     width:                       400px;
-    height:                      60%;
+    height:                      35%;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -55,16 +55,16 @@ mainbox {
 }
 
 listbox {
-    spacing:                     1px;
+    spacing:                     10px;
     padding:                     10px 5px 10px 5px;
     background-color:            transparent;
-    orientation:                 horizontal;
+    orientation:                 vertical;
     children:                    [ "message", "listview" ];
 }
 
 /*****----- Inputbar -----*****/
 inputbar {
-    enabled:                     true;
+    enabled:                     false;
     spacing:                     10px;
     padding:                     40px 40px 45px;
     background-color:            transparent;
@@ -84,7 +84,7 @@ textbox-prompt-colon {
 }
 entry {
     enabled:                     true;
-    expand:                      true;
+    expand:                      false;
     padding:                     12px 16px;
     border-radius:               8px;
     background-color:            @background-alt;
@@ -112,7 +112,7 @@ listview {
     fixed-height:                true;
     fixed-columns:               true;
     
-    spacing:                     1px;
+    spacing:                     4px;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      "default";
@@ -121,9 +121,9 @@ listview {
 /*****----- Elements -----*****/
 element {
     enabled:                     true;
-    spacing:                     5px;
-    padding:                     20px;
-    border-radius:               10px;
+    spacing:                     10px;
+    padding:                     8px;
+    border-radius:               4px;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      pointer;

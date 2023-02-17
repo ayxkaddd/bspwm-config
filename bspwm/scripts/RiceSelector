@@ -7,8 +7,8 @@
 cfg_file="$HOME/.config/bspwm/rice.cfg"
 rofi_command="rofi -theme $HOME/.config/bspwm/scripts/RiceSelector.rasi"
 
-# Options
-isabel="󰔿 ayx"
+# Options 
+isabel="ayx"
 
 options="$isabel\n"
 chosen="$(printf "$options" | $rofi_command -dmenu)"
