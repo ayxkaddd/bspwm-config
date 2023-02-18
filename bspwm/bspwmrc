@@ -29,7 +29,7 @@ workspaces
 ########### Launch The Rice!!
 
 source LaunchWorld
-SetGirlFriendRice
+SetRice
 AutoStartApps
 
 #RandomWall
