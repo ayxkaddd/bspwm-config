@@ -84,7 +84,7 @@ function AutoStartApps() {
 		/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 	fi
 
-	feh --no-fehbg --bg-fill ~/.config/bspwm/rices/$RICETHEME/walls/bg_20.jpg
+	feh --no-fehbg --bg-fill ~/.config/bspwm/rices/$RICETHEME/walls/wallheaven-lain.jpg
 	xsetroot -cursor_name left_ptr
 	
 }
