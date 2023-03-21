@@ -10,7 +10,7 @@ export defnetif=$(ip route | grep '^default' | awk '{print $5}' | head -n1)
 
 ## You can edit this.
 BSPWM_BORDER='1'
-BSPWM_GAP='15'
+BSPWM_GAP='13'
 
 function launch() {
   local running
@@ -84,7 +84,7 @@ function AutoStartApps() {
 		/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 	fi
 
-	feh --no-fehbg --bg-fill ~/.config/bspwm/rices/$RICETHEME/walls/wallheaven-lain.jpg
+	feh -z --no-fehbg --bg-fill ~/.config/bspwm/rices/$RICETHEME/walls/
 	xsetroot -cursor_name left_ptr
 	
 }
